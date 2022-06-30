@@ -23,5 +23,10 @@ describe Solver do
     it 'special case - factorial of 0 is 1' do
       expect(@solver.factorial(0)).to eq(1)
     end
+
+    it 'sReturn the factorial of the number added' do
+      expect(@solver.factorial(4)).to eq(24)
+    end
+
   end
 end
