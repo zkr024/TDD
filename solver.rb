@@ -6,4 +6,8 @@ class Solver
 
     number * factorial(number - 1)
   end
+
+  def reverse(string)
+    raise('just strings for this method') unless string.is_a?(String)
+  end
 end
