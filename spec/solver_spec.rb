@@ -47,5 +47,9 @@ describe Solver do
     it 'Returns fizz when the number is divisible by 3' do
       expect(@solver.fizzbuzz(9)).to eq('fizz')
     end
+
+    it 'Returns buzz when the number is divisible by 5' do
+      expect(@solver.fizzbuzz(25)).to eq('buzz')
+    end
   end
 end
