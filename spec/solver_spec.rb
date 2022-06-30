@@ -38,4 +38,10 @@ describe Solver do
       expect(@solver.reverse('string')).to eq('gnirts')
     end
   end
+
+  describe 'fizzbuzz method' do
+    it 'Only acepts integers' do
+      expect { @solver.fizzbuzz('test') }.to raise_error(RuntimeError)
+    end
+  end
 end
