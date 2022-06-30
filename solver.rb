@@ -12,4 +12,8 @@ class Solver
 
     string.reverse
   end
+
+  def fizzbuzz(number)
+    raise('just numbers for this method') unless number.is_a?(Integer)
+  end
 end
