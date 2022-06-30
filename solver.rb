@@ -9,5 +9,7 @@ class Solver
 
   def reverse(string)
     raise('just strings for this method') unless string.is_a?(String)
+
+    string.reverse
   end
 end
