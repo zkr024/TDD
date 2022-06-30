@@ -51,5 +51,9 @@ describe Solver do
     it 'Returns buzz when the number is divisible by 5' do
       expect(@solver.fizzbuzz(25)).to eq('buzz')
     end
+
+    it 'Returns fizzbuzz when the number is divisible by 3 and 5' do
+      expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
   end
 end
