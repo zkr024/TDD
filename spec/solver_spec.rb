@@ -43,5 +43,9 @@ describe Solver do
     it 'Only acepts integers' do
       expect { @solver.fizzbuzz('test') }.to raise_error(RuntimeError)
     end
+
+    it 'Returns fizz when the number is divisible by 3' do
+      expect(@solver.fizzbuzz(9)).to eq('fizz')
+    end
   end
 end
