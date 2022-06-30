@@ -33,5 +33,9 @@ describe Solver do
     it 'Only acepts strings' do
       expect { @solver.reverse(55) }.to raise_error(RuntimeError)
     end
+
+    it 'reverse a word' do
+      expect(@solver.reverse('string')).to eq('gnirts')
+    end
   end
 end
