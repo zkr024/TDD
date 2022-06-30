@@ -28,4 +28,10 @@ describe Solver do
       expect(@solver.factorial(4)).to eq(24)
     end
   end
+
+  describe 'reverse method' do
+    it 'Only acepts strings' do
+      expect { @solver.reverse(55) }.to raise_error(RuntimeError)
+    end
+  end
 end
