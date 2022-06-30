@@ -16,5 +16,6 @@ class Solver
   def fizzbuzz(number)
     raise('just numbers for this method') unless number.is_a?(Integer)
     return 'fizz' if (number % 3).zero?
+    return 'buzz' if (number % 5).zero?
   end
 end
